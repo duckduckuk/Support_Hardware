@@ -1,0 +1,13 @@
+Foscam 9900 MJPEG Stream URL
+
+netcam_url http://IP-ADDRESS/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=USERNAME&pwd=PASSWORD
+
+Obviously fill in your IP address, username and password set within the camera admin. I was using this with the Foscam FI9900P 1080P Full HD IP Security CCTV Camera.
+
+For your username and password within Motion, simply comment out the line:
+
+ ; netcam_userpass value
+
+I tried for hours trying all combinations of urls, to find that the one above worked quite well, with full resolution MPEG streaming.
+
+I recommend Mr-Dave’s fork of Motion which can be cloned from github.
