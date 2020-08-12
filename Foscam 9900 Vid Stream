@@ -11,3 +11,5 @@ For your username and password within Motion, simply comment out the line:
 I tried for hours trying all combinations of urls, to find that the one above worked quite well, with full resolution MPEG streaming.
 
 I recommend Mr-Dave’s fork of Motion which can be cloned from github.
+
+Taken from https://www.jamesfawcett.co.uk/sitemap/
