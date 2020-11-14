@@ -2,27 +2,27 @@
 
 adb start-server  /  adb kill-server (as required)
 
-* UP
+* UP    
 adb shell input keyevent 19
-* DOWN
+* DOWN    
 adb shell input keyevent 20
-* LEFT
+* LEFT    
 adb shell input keyevent 21
-* RIGHT
+* RIGHT    
 adb shell input keyevent 22
-* ENTER
+* ENTER    
 adb shell input keyevent 66
-* BACK
+* BACK    
 adb shell input keyevent 4
-* HOME
+* HOME    
 adb shell input keyevent 3
-* MENU
+* MENU    
 adb shell input keyevent 1
-* MEDIA PLAY/PAUSE
+* MEDIA PLAY/PAUSE    
 adb shell input keyevent 85
-* MEDIA PREVIOUS
+* MEDIA PREVIOUS     
 adb shell input keyevent 88
-* MEDIA NEXT
+* MEDIA NEXT     
 adb shell input keyevent 87
 
 # Power (Currently not working)
