@@ -1,11 +1,13 @@
-**Install ADB tools onto server machine first.
+# Control your Firestick from server using these commands in terminal.
+
+## Install ADB tools onto server machine first.
 
 adb start-server  /  adb kill-server (as required)
 
 * adb connect xxx.xxx.xxx.xxx (IP)
 * adb disconnect xxx.xxx.xxx.xxx (IP) to end.
 
-# Keypress Commands
+## Keypress Commands
 
 * UP    
 adb shell input keyevent 19
@@ -30,11 +32,11 @@ adb shell input keyevent 88
 * MEDIA NEXT     
 adb shell input keyevent 87
 
-# Power (Currently not working)
+## Power (Currently not working)
 adb shell input keyevent KEYCODE_POWER
 
-# Start Kodi (Live TV)
+## Start Kodi (Live TV)
 adb shell am start -n org.xbmc.kodi/.Splash
 
-# Launch Browser and Webpage
+## Launch Browser and Webpage
 adb shell am start -a android.intent.action.VIEW -d https://www.cssscript.com/demo/rss-feed-scroller-marquee/
