@@ -1,7 +1,9 @@
 **Install ADB tools onto server machine first.
 
 adb start-server  /  adb kill-server (as required)
-adb connect ***.***.***.*** (IP)
+
+* adb connect xxx.xxx.xxx.xxx (IP)
+* adb disconnect xxx.xxx.xxx.xxx (IP) to end.
 
 # Keypress Commands
 
