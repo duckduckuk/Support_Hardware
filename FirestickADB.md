@@ -1,6 +1,8 @@
-# Install ADB tools onto server machine first.
+** Install ADB tools onto server machine first.
 
 adb start-server  /  adb kill-server (as required)
+
+# Keypress Commands
 
 * UP    
 adb shell input keyevent 19
