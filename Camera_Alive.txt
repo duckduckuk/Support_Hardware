@@ -1,0 +1,41 @@
+REM This script keeps the computer from going to sleep - handy to keep the USB ports charging from a laptop when on the field.
+
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.Run "notepad"
+WScript.Sleep 100
+Dim x
+x = 1
+set service = GetObject ("winmgmts:")
+Function IsAppRunning(AppName)
+    for Each Process in Service.Instancesof("Win32_Process")
+        If UCase(Process.Name) = UCase(AppName) then
+            IsAppRunning = True
+            Exit function
+        End If
+    next
+    IsAppRunning = False
+End Function
+
+While x < 1000 
+
+
+AppName = "notepad.exe"
+
+If IsAppRunning(AppName) then
+WshShell.AppActivate "Notepad"
+WshShell.SendKeys "\"
+WScript.Sleep 5000
+else
+    Wscript.quit
+End If
+
+If IsAppRunning(AppName) then
+WshShell.AppActivate "Notepad"
+WshShell.SendKeys "\" 
+WScript.Sleep 5000
+else
+    Wscript.quit
+End If
+
+x=x+1
+Wend
