@@ -1,4 +1,4 @@
-REM This script keeps the computer from going to sleep - handy to keep the USB ports charging from a laptop when on the field.
+REM This script keeps the computer from going to sleep - handy to keep the USB ports charging a digital camera from a laptop when on the field.
 
 Set WshShell = WScript.CreateObject("WScript.Shell")
 WshShell.Run "notepad"
